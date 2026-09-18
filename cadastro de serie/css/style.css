@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url("../img/imagem.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* FORMULÁRIO */
+
+form {
+    position: absolute;
+
+    width: 335px;
+
+    left: 50%;
+    top: 33%;
+
+    transform: translate(-50%, -50%);
+}
+
+
+label {
+    display: block;
+
+    color: white;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    margin-bottom: 3px;
+
+    text-shadow: 1px 1px 2px #000;
+}
+
+
+input {
+    display: block;
+
+    width: 335px;
+    height: 30px;
+
+    margin-bottom: 17px;
+
+    padding: 5px 8px;
+
+    border: 1px solid #aaa;
+    border-radius: 5px;
+
+    background-color: rgba(255, 255, 255, 0.92);
+
+    font-size: 14px;
+}
+
+
+input:focus {
+    outline: none;
+}
+
+
+/* BOTÃO CADASTRAR */
+
+form button {
+    display: block;
+
+    margin: 5px auto 0;
+
+    padding: 5px 18px;
+
+    color: white;
+
+    background: rgba(50, 50, 50, 0.70);
+
+    border: 2px solid rgba(255, 255, 255, 0.45);
+
+    border-radius: 5px;
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+
+form button:hover {
+    background: rgba(20, 20, 20, 0.85);
+}
+
+
+/* JANELA DO RESUMO */
+
+#modal {
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+#resumo {
+    width: 390px;
+
+    padding: 22px;
+
+    background: white;
+
+    border-radius: 8px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+}
+
+
+#resumo h2 {
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+#resumo p {
+    font-size: 14px;
+
+    margin: 10px 0;
+
+    word-wrap: break-word;
+}
+
+
+#ok {
+    display: block;
+
+    margin: 20px auto 0;
+
+    padding: 7px 25px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #444;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+#ok:hover {
+    background: #222;
+}
